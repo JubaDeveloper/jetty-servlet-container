@@ -1,0 +1,21 @@
+<html lang="pt">
+    <head>
+        <title>Spring Application</title>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+        <p>SPeL code below</p>
+        <p data-th-text="${T(java.lang.Math).random()}">10</p>
+        <p>List processing</p>
+        <ul>
+            <li data-th-each="hello: ${hello}">
+                <p data-th-text="|Say welcome to ${hello?:'Someone else'}|"></p>
+            </li>
+        </ul>
+    </body>
+</html>
+
+
+
+
+
